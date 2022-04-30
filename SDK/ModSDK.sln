@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModSDK", "ModSDK\ModSDK.csproj", "{EFAAAA51-0EDD-4685-8321-9C219F929CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModSDK-Editor", "ModSDK-Editor\ModSDK-Editor.csproj", "{60DD483A-4BE9-4BBF-9B23-C42B5CDD4E5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFAAAA51-0EDD-4685-8321-9C219F929CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAAAA51-0EDD-4685-8321-9C219F929CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAAAA51-0EDD-4685-8321-9C219F929CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAAAA51-0EDD-4685-8321-9C219F929CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DD483A-4BE9-4BBF-9B23-C42B5CDD4E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DD483A-4BE9-4BBF-9B23-C42B5CDD4E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DD483A-4BE9-4BBF-9B23-C42B5CDD4E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DD483A-4BE9-4BBF-9B23-C42B5CDD4E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAD68B39-B724-49A2-9E97-633BDC600345}
+	EndGlobalSection
+EndGlobal

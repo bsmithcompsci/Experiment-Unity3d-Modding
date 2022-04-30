@@ -32,8 +32,10 @@
 ExportedObj/
 .consulo/
 *.csproj
-*.unityproj
 *.sln
+!**/SDK/**/*.csproj
+!**/SDK/*.sln
+*.unityproj
 *.suo
 *.tmp
 *.user
