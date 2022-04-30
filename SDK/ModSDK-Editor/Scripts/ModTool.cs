@@ -33,7 +33,6 @@ namespace ModSDK.editor.gui
                 return _sdkVersion;
             }
         }
-        public readonly static List<string> global_asset_labels = new List<string> { "Scene" };
 
         private const string modToolProfile = "modtools";
         private const string build_script = "Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset";
@@ -55,6 +54,7 @@ namespace ModSDK.editor.gui
             var window = GetWindow<ModTool>();
 
             // Initialize Mod Editor Settings.
+            ModSettings.SetupProjectSettings();
             GetSettingsObject(settings_asset);
             GetModEditorSettings(modsdksettings_asset);
 
@@ -254,20 +254,13 @@ namespace ModSDK.editor.gui
             // Apply globals everytime we load it successfully.
             if (m_data != null)
             {
-                global_asset_labels.AddRange(m_data.m_asset_labels);
-
                 var labels = m_settings.GetLabels();
-                foreach (var label in global_asset_labels)
+                foreach (var label in Enum.GetNames(typeof(ModAssetLabels)))
                 {
                     // Add user-labels that aren't in the global-list.
                     if (!labels.Contains(label))
                     {
                         m_settings.AddLabel(label);
-                    }
-                    // Remove labels that aren't in the users-list.
-                    if (!label.Equals("Scene") && !m_data.m_asset_labels.Contains(label))
-                    {
-                        m_settings.RemoveLabel(label);
                     }
                 }
             }

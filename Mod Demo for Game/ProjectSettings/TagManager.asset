@@ -1,17 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!78 &1
-TagManager:
+--- !u!78 &1\nTagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Vehicle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Test
+  - _UNUSED
   - Water
   - UI
-  - 
+  - SelfPlayer
   - 
   - 
   - 
