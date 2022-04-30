@@ -10,6 +10,9 @@ The modding sdk utilizes Addressables, thus allowing for performant real-time as
 | Category | |
 | --- | --- |
 | User-Scripting | ❌ |
+| Physics Layers | ✅ |
+| Tags | ✅ |
+| Addressable Label | ✅ |
 | Game Provided Monobehaviours | ✅ |
 | Prefabs | ✅ |
 | Audio Clips | ✅ |
